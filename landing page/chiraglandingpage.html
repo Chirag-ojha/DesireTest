@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing Page</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		
+		header{
+			width: 100%;
+			font-family: sans-serif;
+			
+			
+		}
+		nav{
+			width: 100%;
+			height: 100px;
+			color: white;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.logo{
+			font-size: 2em;
+			letter-spacing: 2px;
+		}
+		.menu a{
+			text-decoration: none;
+			color: white;
+			padding: 10px 15px;
+			font-size: 20px;
+			position: relative;
+		}
+		.menu a:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			border-bottom: 2px solid brown;
+			transition: 0.5s linear;
+		}
+		.menu a:hover:before{
+			width: 90%;
+		}
+		.register a{
+			text-decoration: none;
+			color: white;
+			padding: 10px 15px;
+			font-size: 30px;
+			background: brown;
+			border-radius: 8px;
+			transition: 0.4s;
+		}
+		.register a:hover{
+			background: transparent;
+			border: 1px solid brown;
+		}
+		.h-txt{
+			max-width: 650px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+			color: white;
+		}
+		.h-txt span{
+			font-size: 3em;
+			color: white;
+		}
+		.h-txt a{
+			text-decoration: none;
+			background: brown;
+			color: white;
+			padding: 10px 15px;
+			letter-spacing: 2px;
+			transition: 0.4s;
+		}
+		.h-txt a:hover{
+			background: transparent;
+			border: 1px solid brown;
+		}
+	</style>
+</head>
+<body style="background-image: url(thar1.jpeg); background-repeat: no-repeat; background-size: cover;"> 
+	<header>
+		<nav>
+			<div class="logo">
+				PHOTO-GRAPHY
+			</div>
+			<div class="menu">
+				<a href="#">HOME</a>
+				<a href="#">PORTRAITS</a>
+				<a href="#">WEDDINGS</a>
+				<a href="#">WILDLIFE</a>
+				<a href="#">CONTACT</a>
+			</div>
+			<div class="register">
+				<a href="#">Register</a>
+			</div>
+		</nav>
+	</header>
+		<section class="h-txt">
+			<span>I CAN CATCH THE BEST<br>MOMENTS OF LIFE</span>
+			<p><i>My inspiration is found in the eyes of the people I photograph.<br>
+				Very simply, photography is a new experience every session.<br>
+				Learning about you, your story, & capturing your special<br>
+			moments. It is my way of painting on a canvas.</i></p>	
+			<br><br>
+			<a href="#">BOOKING</a>
+		</section>
+	
+
+</body>
+</html>
